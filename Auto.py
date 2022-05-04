@@ -11,6 +11,11 @@ class Auto(Véhicule):
         self.moteur=p_moteur
         self.type=p_type
 
+    def _get_type(self, p_type):
+        return p_type
+    def _get_moteur(self, p_moteur):
+        return p_moteur
+
     def Démarrer(self):
         print("L'auto démarre")
 
