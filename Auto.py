@@ -22,3 +22,8 @@ class Auto(Véhicule):
     def Accélérer(self):
         print("L'auto accélère")
 
+    def __str__(self):
+        chaine=" "*60+"\n"+"*"*60+"\n\n"+"   Le nombre de roues : "+self.roues+"\n"+\
+            " L'immatriculation du véhicule : "+self.immatriculation+"\n"+" L'annee de fabrication : "+\
+            +self.annee_fabrication+
+
