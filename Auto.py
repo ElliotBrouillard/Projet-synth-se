@@ -6,3 +6,14 @@ class Auto(Véhicule):
         self.annee_fabrication=p_annee_fabrication
         self.prix=p_prix
         self.nb_portes=p_nb_portes
+        self.nb_roues=p_nb_roues
+        self.freins=p_freins
+        self.moteur=p_moteur
+        self.type=p_type
+
+    def Démarrer(self):
+        print("L'auto démarre")
+
+    def Accélérer(self):
+        print("L'auto accélère")
+
