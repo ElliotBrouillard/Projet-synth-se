@@ -4,7 +4,7 @@ class Vendeur:
         self.nom_vendeur=p_nom_vendeur
         self.prenom_vendeur=p_prenom_vendeur
 
-    def Vendre(self):
+    def Vendre(self, p_prix, Auto):
 
 
     def Rédiger_contrat(self, ls_contrats_vente):
