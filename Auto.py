@@ -1,7 +1,7 @@
 from Véhicule import *
 # déclaration de la classe
 class Auto(Véhicule):
-    def __init__(self, p_immatriculation=0, p_annee_fabrication=0, p_prix=0, p_nb_portes=4, p_nb_roues=4, p_freins="", p_moteur="", p_type=""):
+    def __init__(self, p_immatriculation=0, p_annee_fabrication=0, p_prix=0, p_nb_portes=4, p_nb_roues=4, p_freins="", p_moteur="", p_type="", p_marque="", p_modèle=""):
         self.immatriculation=p_immatriculation
         self.annee_fabrication=p_annee_fabrication
         self.prix=p_prix
@@ -10,11 +10,18 @@ class Auto(Véhicule):
         self.freins=p_freins
         self.moteur=p_moteur
         self.type=p_type
+        self.marque=p_marque
+        self.modèle=p_modèle
 
     def _get_type(self, p_type):
         return p_type
     def _get_moteur(self, p_moteur):
         return p_moteur
+
+    def _get_modèle(self, p_modèle):
+        return p_modèle
+
+
 
     def Démarrer(self):
         print("L'auto démarre")
